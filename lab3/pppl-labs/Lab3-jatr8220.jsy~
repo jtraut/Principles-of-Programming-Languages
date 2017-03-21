@@ -1,0 +1,5 @@
+#test case
+const x = 10; 
+const double = function(x) { return 2*x; }
+x < (double(x) - "5")
+

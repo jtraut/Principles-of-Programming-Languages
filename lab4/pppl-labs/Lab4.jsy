@@ -1,0 +1,17 @@
+const double = function(x: number) { return x * 2 }
+
+const sum = function(a: number) { 
+	return function(b: number) {
+		return function(c: number) {
+			return a + b + c
+		}
+	}
+}
+
+console.log(sum(5)(double(10))(2))
+
+
+const address = {street: "Broadway", number: 312, city: "Boulder", zip: 80302}
+
+console.log(address.number)
+console.log(address.street)

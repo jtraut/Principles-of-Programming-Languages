@@ -1,0 +1,11 @@
+#case 1
+const x = 17; x + "11" + true
+
+#case 2
+"aaa" + "abbb" + 3 + true
+
+#case 3
+"xyz" < "abc"
+
+#case 4
+10 >= "zero"

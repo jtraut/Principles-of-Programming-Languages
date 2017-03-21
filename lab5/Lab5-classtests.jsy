@@ -1,0 +1,6 @@
+const y = {f: 20}
+function (ref x: {f:number}) { //if var instead of ref => new memory allocation 
+  x.f = 10
+  return 0
+}(y)
+console.log(y.f) //(y.f) should return 10, if (y) return 0

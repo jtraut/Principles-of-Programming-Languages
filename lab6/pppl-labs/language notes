@@ -1,0 +1,25 @@
+
+
+L(#) = {""}
+
+L(#ab) = {"ab"}
+
+L(a|b) = {"a","b"}
+	= L(a) U L(b)
+
+L(a|a) = {"a"}
+
+L(a*) = {"","a","aa","aaa", ... }
+
+	 #   a+
+
+L(aa*) = {"a","aa","aaa",...}
+
+//a* = 0 or more a's
+//a+ = 1 or more a's
+//a? = 0 or 1 a
+
+L(re*) = L(#) U L(re re*)
+	= L(# | re re*)
+
+L(aa*) = L(a+)

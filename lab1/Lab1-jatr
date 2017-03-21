@@ -1,0 +1,15 @@
+Lab 1 Write Up
+
+2. Scala Basics: Binding and Scope
+	a) Use of pi at line 4 is bound by the inner braces {} val declaration of 	3.14159 on line 3, because pi is also being called within the braces. 
+	   Use of pi at line 7 is bound by the val declaration 3.14 on line 1 	because it is called in the same environment outside of any braces.  
+	b) The use of x at line 3 is bound by line 1 value of 3 as a default. When x is called in line 6 it is bound by the input value of f(x) on line 2, as it falls within the scope or braces of the the function. The use of x on line 10 is bound by the input int value of the function on line 2 because it is within the scope of the function, yet outside the scope of the val x declaration on line 8. On line 13, x is bound to the default value 3 given on line 1 	because it is outside the scope of the function.  
+
+3. Scala Basics: Typing
+	Yes, g is a well-typed function because it will return a valid integer pair, a is an int and b is a tuple of two ints, and the return format will be ((Int, Int), Int).  
+	x: Int because declared Int
+		(a, b): (Int, (Int, Int) because 1, x and 3 are all Ints
+			(b, 1): ((Int, Int), 1) because b still Ints and 1 is int
+				(b, a+2): ((Int, Int), Int) because a is Int and 2 is Int added is still Int. 
+
+
